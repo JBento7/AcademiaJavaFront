@@ -1,0 +1,297 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,700');
+
+/* GLOBAL STYLES */
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	box-sizing:border-box;
+}
+	
+:root{
+	--bg-preto:rgba(0,0,0);
+	--nao-metal:rgb(12, 0, 187);
+	--gas-nobre:rgb(0, 238, 255);
+	--metal-alcalino:rgb(255, 174, 0);
+	--metal-alcalino-terroso:rgb(255, 238, 0);
+	--semimetal:rgb(0, 255, 225);
+	--halogenio:rgb(0, 68, 105);
+	--outros-metais:rgb(0, 117, 117);
+	--metal-transicao:rgb(255, 0, 0);
+	--lantanideo:rgb(0, 151, 88);
+	--actinidio:rgb(255, 224, 247);
+}
+
+body{
+	font:1em/1 'Montserrat';
+	color:rgb(255, 255, 255);
+	text-align:center;
+	padding:1em 5%;
+	background:var(--bg-preto);
+}
+
+	
+/* FOREGROUND COLOR VARIABLES */
+.nao-metal{
+	color:var(--nao-metal);
+}
+	
+.gas-nobre{
+	color:var(--gas-nobre);
+}
+
+.metal-alcalino{
+	color:var(--metal-alcalino);
+}
+	
+.metal-alcalino-terroso{
+	color:var(--metal-alcalino-terroso);
+}
+	
+.semimetal{
+	color:var(--semimetal);
+}
+	
+.halogenio{
+	color:var(--halogenio);
+}
+	
+.outros-metais{
+	color:var(--outros-metais);
+}
+	
+.metal-transicao{
+	color:var(--metal-transicao);
+}
+	
+.lantanideo{
+	color:var(--lantanideo);
+}
+	
+.actinidio{
+	color:var(--actinidio);
+}
+
+	
+/* TYPOGRAPHY STYLES */
+pre {
+	position: center;
+	display: block;
+	font-family: 'montserrsat';
+	white-space: pre;
+	margin: 1em 0;
+	}
+
+h1{
+	margin:.5em 0;
+	font-size:calc(3vw + 2rem);
+	font-weight:100;
+	text-transform:uppercase;
+	letter-spacing:-.05em;
+}
+
+h2{
+	font-size:2em;
+}
+h4{
+
+	font-size: 15px;
+}
+p:last-child{
+	font-size:.8em;	
+}
+
+
+/* GRID CONTAINER STYLES */
+main{
+	margin:auto;
+	max-width:45em;
+	display:flex;
+}
+
+#grid-container{
+	flex-grow:1;
+	min-width:7em;	
+}
+
+.col-hidden{
+	display:none;	
+}
+
+
+/* GRID CELL */
+section{
+	height:7em;
+	background:var(--bg-preto);	
+	border:.150rem solid;
+	border-radius:.25rem;	
+	line-height:1.25;
+	margin-bottom:.5em;
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+span{
+	font-size:.75em;
+	position:absolute;
+	top:.3em;
+	left:.5em;	
+}
+
+/* FOOTER */
+footer {
+	font-size:.8em;
+	text-align:left;	
+	flex-basis:13.5rem;
+	margin:-.25em 0 0 1em;
+}
+
+ul{
+	display:flex;
+	flex-wrap:wrap;
+  position:sticky;
+  top:1em;
+}
+
+li{
+	flex-basis:100%;
+	line-height:10;
+	margin-bottom:1em;	
+}
+
+li:before{
+	content:' ';
+	display:inline-block;
+	width:1em;
+	height:1em;
+	border:.125em solid;
+	border-radius:.125rem;	
+	margin-right:.5em;
+	position:relative;
+	top:.25em;
+}
+
+
+@media only screen and (min-width:92.5em){
+	@supports (display:grid){
+		
+		/* GLOBAL STYLES */
+		
+		body{
+			font-size:.65em;
+			padding:2em;	
+		}
+		
+		
+		/* GRID CONTAINER STYLES */
+	
+		main{
+			max-width:130.5em;
+			display:block;
+		}
+		
+		#grid-container{
+			display:grid;
+			grid-template-columns:repeat(18, 7em);
+			grid-gap:.50em;	
+		}
+			
+		.col-span16{
+			grid-column:span 16;
+		}
+			
+		.col-span10{
+			grid-column:span 10;
+		}
+			
+		.col-span3{
+			grid-column:span 3;
+		}
+			
+		.col-hidden{
+			display:block;
+			visibility:hidden;
+		}
+			
+		
+		/* GRID CELL */
+		
+		section{
+			margin:0;
+		}
+		
+        
+		section:hover{
+			transition: all .2s;
+			transform:scale(1.5);
+			cursor:pointer;
+			z-index:2;
+		}
+		
+		/* FOOTER */
+	
+		footer{
+			font-size:1em;
+			width:100%;
+			margin:2em 0;
+		}
+		
+		ul{
+			justify-content:center;
+		}
+		
+		li{
+			flex-basis:auto;
+			margin-bottom:0;	
+		}
+		
+		li + li{
+			margin-left:2em;	
+		}	
+	}
+}
+
+.clickToShowInfo {
+		position: relative;
+	}
+	/* When clicking outer div, make inner div visible */
+	.clickToShowInfo:active .info { visibility: visible; }
+	/* And hold by staying visible on hover */
+	.info:hover {
+		visibility: visible;
+		transition: all .2s;
+		transform:scale(1.5);
+	}
+	/* General settings for popup */
+	.info {
+		position: absolute;
+		top: -10;
+		visibility: hidden;
+		z-index: 100;
+		background-color: var(--bg-preto);
+		border: 3px solid;
+		padding: 8px;
+		width: auto;
+		height: auto;
+		}
+
+		/* If we want clicking on the popup to close, use this */
+	.info:active {
+		visibility: hidden;	/* Doesn't work because DCEvent is :active as well */
+		height: 0px;
+		width: 0px;
+		left: -1000px;
+		top: -1000px;
+
+	}
+@media only screen and (min-width:102.5em){
+	/* GLOBAL STYLES */
+		
+		body{
+			font: size 0.75em;
+		}	
+}
+
