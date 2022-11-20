@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --c12: #000;
+    --c11: #111;
+    --c10: #2E2E2E;
+    --c9: #404040;
+    --c8: #595959;
+    --c7: #717171;
+    --c6: #9C9C9C;
+    --c5: #B2B2B2;
+    --c4: #CCC;
+    --c3: #DEDEDE;
+    --c2: #EDEDED;
+    --c1: #F7F7F7;
+    --w: #FFF;
+    --p5: #332200;
+    --p4: #664400;
+    --p3: #A66F00;
+    --p2: #E4A30B;
+    --p1: #FFBB00;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: var(--c12);
+}
+
+.header-container {
+    width: 1200px;
+    height: 96px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container img {
+    margin-top: 32px;
+}
+
+.header-container nav ul {
+    list-style: none;
+    line-height: 96px;
+    color: var(--w);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    gap: 40px;
+}
+
+.header-container nav ul li {
+    display: inline;
+}
+
+.menu-ativo {
+    text-decoration: underline 2px;
+    text-underline-offset: 8px;
+}
+
+.main-titulo {
+    background-color: var(--c11);
+    height: 568px;
+}
+
+.main-titulo p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--c5);
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+
+.main-titulo h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: var(--w);
+    text-transform: lowercase;
+    padding-bottom: 60px;
+}
+
+.main-titulo h1::after {
+    content: ".";
+    color: var(--p1);
+}
+
+.main-container {
+    width: 1200px;
+    margin: auto;
+    position: absolute;
+    left: 220px;
+}
+
+
+.main-conteudo {
+    position: absolute;
+    width: 1160px;
+    height: 928px;
+    left: 220px;
+    top: 348px;
+    background-color: var(--w);
+
+}
+
+.main-conteudo-container {
+    position: absolute;
+    width: 460px;
+    height: 928px;
+    background-color: var(--c12);
+}
+
+.main-conteudo-container-produto{
+    position: absolute;
+    width: 352px;
+    height: 476px;
+    top: 60px;
+    left: 48px;  
+
+}
+
+
+.main-conteudo h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 32px;
+    color: var(--c5);
+    margin-top: 48px;
+}
+
+.relative{
+    position: relative;
+    white-space: nowrap;
+}
+
+div#one{
+    position: relative;
+    width: 4px;
+    height: 8px;
+    shape-outside: inset(4px 8px 4px 8px);
+    background: var(--p1); 
+}
+
+div#one, div#two{
+    display: inline-block;
+}
+.teste{
+    position: absolute;
+    width: 160px;
+    height: 48px;
+    background-color: var(--w);
+    border-radius: 5px;
+    
+    
+}
+
+.button1{
+    width: 61px;
+    height: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.main-conteudo p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--c10);
+    
+}
+
+footer {
+    background-color: var(--c12);
+    margin-top: 120px;
+    position: absolute;
+    width: 1600px;
+    height: 492px;
+    left: 0px;
+    top: 1396px;
+
+}
+
+.footer-container {
+    width: 1200px;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 24% 38% 38%;
+}
+
+footer h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--w);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+footer ul {
+    list-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--c5);
+}
+
+footer p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--c6);
+    margin-top: 80px;
+    padding-bottom: 32px;
+}
+
+.footer-contato hr {
+    width: 360px;
+    border-color: var(--c11);
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+footer img {
+    margin-right: 32px;
+}
+
+
+
+
+
+
+
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .form label{
+    display: block;
+    font: 400 1rem/1.5 "Poppins", sans-serif;
+    margin-bottom: 4px;
+  }
+  
+  .form .col-2{
+    grid-column: span 2; /*Expandir caixa de texto*/
+  }
+  
+  .form input[type="text"],
+  .form input[type="email"],/*Estilizando somente os inputs tipo texto*/
+  .form textarea{
+    font: 400 0.9rem/1.5 "Roboto", sans-serif;
+    background: var(--cor--1);
+    border: 1px solid var(--cor--2);
+    padding: 12px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .form input[type="text"]:focus,
+  .form input[type="email"]:focus,/*Estilizando somente os inputs tipo texto*/
+  .form textarea:focus{
+    outline: none;
+    border-color: var(--cor--p1);
+    background: var(--cor--0);
+    box-shadow: 0 0 0 2px #fea;
+  }
+  
+  @media(max-width: 600px){
+    .form{
+      grid-template-columns: 1fr;
+    }
+  
+    .form .col-2{
+      grid-column: 1;
+    }
+  }
+/*Fontes das menores para as maiores em sequência*/
+/* 1 poppins e 2 roboto*/
+ 
+  .font-2-xs{
+      /*Todas configurações relacionadas a fonte*/
+    font: 400 0.875rem/1.43 'Roboto', sans-serif;
+  }
+  
+  .font-1-s{
+    font: 400 1rem/1.5 'Poppins', sans-serif;
+  }
+  
+  .font-2-s{
+    font: 400 1rem/1.5 'Roboto', sans-serif;  
+  }
+  
+  .font-1-m,
+  .font-1-m-b{ /*font-1-b*/
+    font: 400 1.125rem/1.35 'Poppins', sans-serif;  
+  }
+  .font-1-m-b{
+    font-weight: 600;
+  }
+  
+  .font-2-m{
+    font: 500 1.125rem/1.35 'Roboto', sans-serif;
+  }
+  
+  .font-1-l{
+    font: 400 1.5rem/1.5 'Poppins', sans-serif;
+  }
+  
+  .font-2-l,
+  .font-2-l-b{
+    font: 400 1.5rem/1.5 'Roboto', sans-serif;
+    color: var(--c5);
+  }
+  
+  .font-2-l-b{
+    font-weight: 500;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+  }
+  
+  .font-1-xl{
+    font: 600 2rem/1.25 'Poppins', sans-serif;
+  }
+  
+  .font-2-xl{
+    font: 500 2rem/1.25 'Roboto', sans-serif;
+  }
+  
+  .font-1-xxl{
+    font: 600 4rem/1.125/*line-height escrever em barra*/'Poppins', sans-serif;
+    color: var(--c5);
+  }
+  .font-1-xxl::after{
+    content: ".";
+    color: var(--p1);
+
+  }
+  
+  /*Fontes do responsivo*/
+  @media(max-width:1200px){
+    .font-1-xxl{
+      font-size: 3rem; /* Mudar tamanho da fonte do h1 para não haver quebra de linha*/
+    }
+  
+    .font-2-l,
+    .font-2-l-b {
+      font-size: 1.125rem;
+    }
+  }
+  
+  @media(max-width:800px){
+    .font-1-xxl{
+      font-size: 2rem;
+    }
+  
+    .font-1-xl,
+    .font-2-xl{
+      font-size: 1.5rem;
+    }
+  }
+
+/*Variáveis de cores*/
+:root{
+    --cor--0: #FFFFFF;
+    --cor--1: #F7F7F7;
+    --cor--2: #EDEDED;
+    --cor--3: #DEDEDE;
+    --cor--4: #CCCCCC;
+    --cor--5: #B2B2B2;
+    --cor--6: #9C9C9C;
+    --cor--7: #717171;
+    --cor--8: #595959;
+    --cor--9: #404040;
+    --cor--10: #2e2e2e;
+    --cor--11: #111111;
+    --cor--12: #000000;
+  
+    /*Cores primárias*/
+    --cor--p1: #FFBB00;
+    --cor--p2: #E4A30B;
+    --cor--p3: #A66F00;
+    --cor--p4: #664400;
+    --cor--p5: #332200;
+  }
+  
+/*Padronização do container*/
+.container{
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*Botão*/
+  .botao{
+    display: inline-block;
+    padding: 16px 32px;
+    background: linear-gradient(#FFBF00, #F2A50C);
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    text-transform: uppercase;
+    color: var(--cor--p5);
+    font: 600 1.125rem/1.35 'Poppins', sans-serif;  
+    max-width: max-content; /*sempre o tamanho máximo do botão*/
+    border: none;
+    cursor: pointer;
+  }
+  .bicicleta{
+    position: absolute;
+    width: 160px;
+    height: 108px;
+    left: 410px;
+    top: 745px;
+    border-radius: 5px;
+  }
+  
+  .botao:hover{
+    background: linear-gradient(#FFB60D, #E59317);
+  }
+  
+  .botao.secundario{ /*Tiver a classe botao e secundário no elemento*/
+    background: var(--cor--10);
+    color: var(--cor--2);
+  }
+  
+  .botao.secundario:hover{
+    background: var(--cor--9);
+  }
+  
+  .botao.seta{
+    display: flex;
+    align-items: center;
+  }
+  
+  .botao.seta::after{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    margin-left: 12px;
+    background: url(../../img/icones/seta.svg);
+    transition: transform 0.2s;
+  }
+  
+  .botao.seta:hover::after{
+    transform: translateX(4px);
+  }
+  
+  @media(max-width:600px){
+    .botao{
+      padding: 12px 16px;
+      font-size: 1rem;
+    }
+  }
+  
+  .link{
+    display: inline-block;
+    color: var(--cor--p1);
+    font: 500 1.5rem/1.5 "Poppins", sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .link::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: currentColor; /*Pega a cor definida no elemento pai*/
+  }
+  
+  .link:hover{
+    color: var(--cor--0);
+  }
+  
+  /*Titulo paginas internas*/
+  .titulo-bg{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--cor--11);
+  }
+  
+  .titulo{
+    background: url("../../img/dec/top-right.svg") no-repeat top right 20px;
+  }
+  
+  .titulo p{
+    margin-bottom: 4px;
+  }
+  
+  @media(max-width: 800px){
+    .titulo-bg{
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  
+    .titulo p{
+      font-size: 1rem;
+      text-transform: lowercase;
+      font-weight: 400;
+    }
+  }
+
+
+.titulo-bg{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--cor--11);
+}
+
+#orcamento{
+    background: linear-gradient(var(--cor--11) 600px, var(--cor--1) 0px);
+  }
+  
+  .orcamento{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    padding-bottom: 120px;
+  }
+  
+  .orcamento h2{
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    color: var(--c5);
+
+  }
+  
+  .orcamento h2::before{
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 8px;
+    background-color: var(--cor--p1);
+    position: absolute;
+    left: -12px;
+  }
+  
+  .orcamento-produto,
+  .orcamento-dados{
+    padding: 60px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .orcamento-produto{
+    border-radius: 5px 0 0 5px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-content: start;
+    background: var(--cor--12) url("../../img/dec/bottom-left.svg") no-repeat bottom 20px left 20px;
+  }
+  
+  .orcamento-produto > * {
+    grid-column: 1/-1;
+  }
+  
+  .orcamento-produto > label {
+    grid-column: initial;
+  }
+  
+  .orcamento-produto label {
+    font: 400 1rem/1.5 "Poppins", sans-serif;
+    color: var(--cor--4);
+    background-color: var(--cor--10);
+    padding: 12px 16px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    margin-top: 24px;
+        
+  }
+  
+  .orcamento-produto label::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--cor--6);
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .orcamento-produto input:checked + label::before{
+    border-color: var(--cor--7);
+    box-shadow: inset 0 0 0 3px var(--cor--0), inset 0 0 0 6px var(--cor--7);
+  }
+  
+  .orcamento-produto label:hover{
+    background-color: var(--cor--9);
+    border-color: var(--cor--9);
+  }
+  
+  
+  .orcamento-produto label span {
+    display: none;
+  }
+  
+  .orcamento-produto input:checked + label span {
+    display: inline-block;
+  }
+  
+  .orcamento-produto input{ /*Remover radio button*/
+    opacity: 0;
+    position: absolute;
+    pointer-events: none; /*Remover os tipos de evento de click*/
+  }
+  
+  .orcamento-produto input:checked + label{
+    background: var(--cor--0);
+    color: var(--cor--11);
+  }
+  
+  .orcamento-dados{
+    border-radius: 0 5px 5px 0;
+    background: var(--cor--0) url("../../img/dec/bottom-right.svg") no-repeat bottom 20px right 20px;
+  }
+  
+  .orcamento-conteudo h2,
+  .orcamento-dados h2:nth-of-type(n + 2){
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #bikcraft:checked ~ #orcamento-bikcraft,
+  #seguro:checked ~ #orcamento-seguro{
+    display: grid;
+        
+  }
+  
+  .orcamento-conteudo{
+    display: none;
+  }
+  
+  .orcamento-detalhes{
+    display: none;
+    background-color: var(--cor--0);
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    align-items: center;
+    }
+  
+  .orcamento-detalhes li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 16px;
+    height: 16px;
+
+    
+  }
+  
+  .orcamento-detalhes li img{
+    width: 16px;
+    margin-right: 8px;
+  }
+  
+  .orcamento-produto input:checked + label + .orcamento-detalhes {
+    display: grid;
+  }
+  
+  @media (max-width: 1200px){
+    .orcamento-produto,
+    .orcamento-dados{
+      padding: 32px;
+    }
+  }
+  
+  @media (max-width: 800px){
+    .orcamento{
+      grid-template-columns: 1fr;
+    }
+  
+    .orcamento-produto{
+      border-radius: 5px 5px 0 0;
+      background: var(--cor--12);
+    }
+  
+    .orcamento-dados{
+      border-radius: 0 0 5px 5px;
+    }
+  }
+  
+  @media(max-width: 400px){
+    .orcamento-produto{
+      grid-template-columns: 1fr;
+    }
+  }
